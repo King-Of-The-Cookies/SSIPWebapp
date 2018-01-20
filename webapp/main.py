@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 from scipy import spatial
 
-os.chdir("/Users/guysimons/Documents/BISSmaster/smart service project 1/Final System/webapp")
+os.chdir("/Users/lisaherzog/Google Drive/UM/Smart Services/Smart Service Project/WebApplication/SSIPWebapp/webapp")
 
 """
 The function below computes the similarity between all columns in a dataframe. It first creates an empty dataframe to hold the 
@@ -86,6 +86,14 @@ userVector = pd.Series(np.zeros((similarityMatrix.shape[1])), index=similarityMa
 @app.route("/")
 def index():
     return render_template("main.html")
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/A1-food")
+def A1food():
+    return render_template("A1-food.html")
 
 @app.route("/chooseactivity")
 def chooseactivity():
