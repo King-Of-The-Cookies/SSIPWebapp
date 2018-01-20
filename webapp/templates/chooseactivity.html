@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>SSIP back end</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--to encourage the browser to use fullscreen-->
+  <meta content="width=device-width,initial-scale=1" name=viewport>
+  <link href={{ url_for('static', filename='images/techruption.ico')  }} rel="icon" >
+  <link href={{ url_for('static', filename='css/bootstrap.min.css')  }} rel="stylesheet">
+  <link href={{  url_for('static', filename='css/starter-template2.css')  }} rel="stylesheet">
+  <!--stylesheet. The url_for is a Flask function to find the url for a standard folder. Then, within the static folder you'll want to look for the css folder ccontaining the
+  bootstrap min file.-->
+
+
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="/">SSIP back-end demonstration</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+            <li><a href="/chooseactivity">Start Choosing</a></li>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div class="starter-template">
+  <br>
+  <br>
+<p></p>
+<ul>
+<ul>
+<ul>
+<ul>
+<br>
+<p class="lead">Predicted Activity: {{predictedactivity}}
+<br>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<ul>
+<ul>
+<form action="/submitForm" method="post">
+  <div class="lead">
+  <input type="radio" name="likedActivity" value="-1" size = 80>Dislike</input>
+</div>
+<div class="lead">
+ <input type="radio" name="likedActivity" value="1" size = 80>Like</input>
+</div>
+ <input type="submit" value="Submit" class="lead">
+</form>
+<br>
+</p>
+</div>
+
+
+</body>
+</html>
