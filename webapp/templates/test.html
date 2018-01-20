@@ -1,12 +1,36 @@
 <!DOCTYPE HTML>
+<html>
 <style type="text/css">
    body { background: #C4C4C4 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+<style>
+.image1 {
+  position: relative;
+  top: 0;  left: 750px;
+  width: 25%;
+  height: 25%;
+}
+.image2 {
+  position: absolute;
+  top:712px; left:797px;
+  width: 20.1%;
+  height: auto;
+
+}
+
+
 </style>
 <head>
 
 </head>
 <body>
-  <a href="/chooseactivity">
-  <p style="text-align:center;"><img src="static/images/Home.png" style="width: 25%; height: 25%"/></p>
-  </a>
+  <div style="position: relative; left:0; top:0;">
+  <img class="image1" src="static/images/Home.png"/>
+  <a href="/content1">
+  <img class="image2" src="static/images/1.HomeButton1.png"/>
+  <a>
+</div>
 </body>
+
+</html>
