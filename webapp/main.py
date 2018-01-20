@@ -76,6 +76,7 @@ app = Flask(__name__)
 rating = None
 currentActivity = None
 
+
 """
 Generate new userVector for a user that opens the application for the first time.
 """
