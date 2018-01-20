@@ -12,7 +12,11 @@ import numpy as np
 import pandas as pd
 from scipy import spatial
 
+<<<<<<< HEAD
 os.chdir("/Users/guysimons/Documents/BISSmaster/smart service project 1/Final System/WebappRepo/SSIPWebapp/webapp")
+=======
+os.chdir("/Users/lisaherzog/Google Drive/UM/Smart Services/Smart Service Project/WebApplication/SSIPWebapp/webapp")
+>>>>>>> 512c2cff7c649d7ab6e9f871b9bee1e6901fd4d0
 
 """
 The function below computes the similarity between all columns in a dataframe. It first creates an empty dataframe to hold the 
@@ -89,11 +93,19 @@ def index():
 
 @app.route("/home")
 def home():
+<<<<<<< HEAD
      return render_template("home.html")
 
 @app.route("/test")
 def test():
      return render_template("test.html")
+=======
+    return render_template("home.html")
+
+@app.route("/A1-food")
+def A1food():
+    return render_template("A1-food.html")
+>>>>>>> 512c2cff7c649d7ab6e9f871b9bee1e6901fd4d0
 
 @app.route("/chooseactivity")
 def chooseactivity():
